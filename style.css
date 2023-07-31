@@ -1,0 +1,718 @@
+@font-face {
+    font-family: Oswald-Regular;
+    src: url('./Oswald-Regular.ttf');
+}
+
+@font-face {
+    font-family: RobotoMono-Bold;
+    src: url('./RobotoMono-Bold.ttf');
+}
+
+@font-face {
+    font-family: Poppins-BlackItalic;
+    src: url('./Poppins-BlackItalic.ttf');
+}
+@font-face {
+    font-family: Poppins-Black;
+    src: url('./Poppins-Black.ttf');
+}
+a {
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+/* header */
+header {
+    position: sticky;
+    z-index: 999;
+    top: 0px;
+    background-color: rgba(11, 11, 11, 1);
+}
+
+.flag-logo,.headercol {
+    animation: blinker 5s ease infinite;
+}
+
+@keyframes blinker {
+    0% {
+        transform: rotate3d(0, 0, 0, 180deg);
+    }
+
+    100% {
+        transform: rotate3d(0, 5, 0, 360deg);
+    }
+}
+
+.header {
+    background-color: #2b2b2b;
+    box-shadow: inset 0px 0px 20px 20px rgba(0, 0, 0, .8);
+    border-radius: 0px 0px 200px 200px;
+}
+
+header ul li a {
+    color: #fff !important;
+    text-transform: capitalize;
+    font-weight: bold !important;
+    font-family: Oswald-Regular;
+    font-size: 25px !important;
+    letter-spacing: 1px;
+}
+
+header ul {
+    align-items: center;
+    gap: 90px;
+}
+
+.navigation-div {
+    justify-content: center;
+}
+
+.saffron {
+    background-color: #d64a16;
+    padding: 0px 30px;
+    border-radius: 10px;
+}
+
+.green {
+    background-color: #0d8401;
+    padding: 0px 30px;
+    border-radius: 10px;
+}
+
+/* banner */
+.banner {
+    position: relative;
+}
+
+/* gandhi */
+.title h1 {
+    font-family: Oswald-Regular;
+    color: aliceblue;
+    display: inline;
+    border-radius: 5px;
+    animation: blink 5s ease infinite;
+}
+
+@keyframes blink {
+    0% {
+        text-shadow: 0px 0px aliceblue;
+        box-shadow: 0px 0px aliceblue;
+    }
+
+    100% {
+        text-shadow: 0px 0px 100px aliceblue;
+        box-shadow: 0px 0px 20px 20px aliceblue;
+    }
+}
+
+.fighter1row {
+    background-color: rgba(11, 11, 11, 1);
+}
+
+.fighter1col1 img {
+    border-radius: 10px;
+}
+
+.Gandhi1 {
+    font-family: Poppins-BlackItalic;
+    color: #d64a16;
+    animation: blinkli 5s ease infinite;
+}
+
+@keyframes blinkli {
+    0% {
+        text-shadow: 0px 0px #d64a16;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px #d64a16;
+    }
+}
+
+.Gandhi2 {
+    font-family: Poppins-BlackItalic;
+    color: #fff;
+    animation: blinkli1 4s ease infinite;
+}
+
+@keyframes blinkli1 {
+    0% {
+        text-shadow: 0px 0px #fff;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px #fff;
+    }
+}
+
+.Gandhi3 {
+    font-family: Poppins-BlackItalic;
+    color: #0d8401;
+    animation: blinkli2 3s ease infinite;
+}
+
+@keyframes blinkli2 {
+    0% {
+        text-shadow: 0px 0px #0d8401;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px #0d8401;
+    }
+}
+
+.gandhi-dateofbirth {
+    font-family: Oswald-Regular;
+    color: aliceblue;
+    animation: blinkli3 2s ease infinite;
+}
+
+@keyframes blinkli3 {
+    0% {
+        text-shadow: 0px 0px aliceblue;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px aliceblue;
+    }
+}
+
+/* bose */
+.fighter2row {
+    background-color: rgba(11, 11, 11, 1);
+}
+
+.fighter2col2 img {
+    border-radius: 10px;
+}
+
+.Bose1 {
+    font-family: Poppins-BlackItalic;
+    color: #d64a16;
+    animation: blinkli 5s ease infinite;
+}
+
+@keyframes blinkli {
+    0% {
+        text-shadow: 0px 0px #d64a16;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px #d64a16;
+    }
+}
+
+.Bose2 {
+    font-family: Poppins-BlackItalic;
+    color: #fff;
+    animation: blinkli1 4s ease infinite;
+}
+
+@keyframes blinkli1 {
+    0% {
+        text-shadow: 0px 0px #fff;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px #fff;
+    }
+}
+
+.Bose3 {
+    font-family: Poppins-BlackItalic;
+    color: #0d8401;
+    animation: blinkli2 3s ease infinite;
+}
+
+@keyframes blinkli2 {
+    0% {
+        text-shadow: 0px 0px #0d8401;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px #0d8401;
+    }
+}
+
+.bose-dateofbirth {
+    font-family: Oswald-Regular;
+    color: aliceblue;
+    animation: blinkli3 2s ease infinite;
+}
+
+@keyframes blinkli3 {
+    0% {
+        text-shadow: 0px 0px aliceblue;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px aliceblue;
+    }
+}
+
+/* rani */
+.fighter3row {
+    background-color: rgba(11, 11, 11, 1);
+}
+
+.fighter3col1 img {
+    border-radius: 10px;
+}
+
+.Rani1 {
+    font-family: Poppins-BlackItalic;
+    color: #d64a16;
+    animation: blinkli 5s ease infinite;
+}
+
+@keyframes blinkli {
+    0% {
+        text-shadow: 0px 0px #d64a16;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px #d64a16;
+    }
+}
+
+.Rani2 {
+    font-family: Poppins-BlackItalic;
+    color: #fff;
+    animation: blinkli1 4s ease infinite;
+}
+
+@keyframes blinkli1 {
+    0% {
+        text-shadow: 0px 0px #fff;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px #fff;
+    }
+}
+
+.Rani3 {
+    font-family: Poppins-BlackItalic;
+    color: #0d8401;
+    animation: blinkli2 3s ease infinite;
+}
+
+@keyframes blinkli2 {
+    0% {
+        text-shadow: 0px 0px #0d8401;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px #0d8401;
+    }
+}
+
+.rani-dateofbirth {
+    font-family: Oswald-Regular;
+    color: aliceblue;
+    animation: blinkli3 2s ease infinite;
+}
+
+@keyframes blinkli3 {
+    0% {
+        text-shadow: 0px 0px aliceblue;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px aliceblue;
+    }
+}
+
+/* singh */
+.fighter4row {
+    background-color: rgba(11, 11, 11, 1);
+}
+
+.fighter4col2 img {
+    border-radius: 10px;
+}
+
+.Singh1 {
+    font-family: Poppins-BlackItalic;
+    color: #d64a16;
+    animation: blinkli 5s ease infinite;
+}
+
+@keyframes blinkli {
+    0% {
+        text-shadow: 0px 0px #d64a16;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px #d64a16;
+    }
+}
+
+.Singh2 {
+    font-family: Poppins-BlackItalic;
+    color: #fff;
+    animation: blinkli1 4s ease infinite;
+}
+
+@keyframes blinkli1 {
+    0% {
+        text-shadow: 0px 0px #fff;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px #fff;
+    }
+}
+
+.Singh3 {
+    font-family: Poppins-BlackItalic;
+    color: #0d8401;
+    animation: blinkli2 3s ease infinite;
+}
+
+@keyframes blinkli2 {
+    0% {
+        text-shadow: 0px 0px #0d8401;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px #0d8401;
+    }
+}
+
+.singh-dateofbirth {
+    font-family: Oswald-Regular;
+    color: aliceblue;
+    animation: blinkli3 2s ease infinite;
+}
+
+@keyframes blinkli3 {
+    0% {
+        text-shadow: 0px 0px aliceblue;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px aliceblue;
+    }
+}
+
+/* chatterjee */
+.fighter5row {
+    background-color: rgba(11, 11, 11, 1);
+}
+
+.fighter5col1 img {
+    border-radius: 10px;
+}
+
+.Chatterjee1 {
+    font-family: Poppins-BlackItalic;
+    color: #d64a16;
+    animation: blinkli 5s ease infinite;
+}
+
+@keyframes blinkli {
+    0% {
+        text-shadow: 0px 0px #d64a16;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px #d64a16;
+    }
+}
+
+.Chatterjee2 {
+    font-family: Poppins-BlackItalic;
+    color: #fff;
+    animation: blinkli1 4s ease infinite;
+}
+
+@keyframes blinkli1 {
+    0% {
+        text-shadow: 0px 0px #fff;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px #fff;
+    }
+}
+
+.Chatterjee3 {
+    font-family: Poppins-BlackItalic;
+    color: #0d8401;
+    animation: blinkli2 3s ease infinite;
+}
+
+@keyframes blinkli2 {
+    0% {
+        text-shadow: 0px 0px #0d8401;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px #0d8401;
+    }
+}
+
+.chatterjee-dateofbirth {
+    font-family: Oswald-Regular;
+    color: aliceblue;
+    animation: blinkli3 2s ease infinite;
+}
+
+@keyframes blinkli3 {
+    0% {
+        text-shadow: 0px 0px aliceblue;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px aliceblue;
+    }
+}
+
+/* azad */
+.fighter6row {
+    background-color: rgba(11, 11, 11, 1);
+}
+
+.fighter6col2 img {
+    border-radius: 10px;
+}
+
+.Azad1 {
+    font-family: Poppins-BlackItalic;
+    color: #d64a16;
+    animation: blinkli 5s ease infinite;
+}
+
+@keyframes blinkli {
+    0% {
+        text-shadow: 0px 0px #d64a16;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px #d64a16;
+    }
+}
+
+.Azad2 {
+    font-family: Poppins-BlackItalic;
+    color: #fff;
+    animation: blinkli1 4s ease infinite;
+}
+
+@keyframes blinkli1 {
+    0% {
+        text-shadow: 0px 0px #fff;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px #fff;
+    }
+}
+
+.Azad3 {
+    font-family: Poppins-BlackItalic;
+    color: #0d8401;
+    animation: blinkli2 3s ease infinite;
+}
+
+@keyframes blinkli2 {
+    0% {
+        text-shadow: 0px 0px #0d8401;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px #0d8401;
+    }
+}
+
+.azad-dateofbirth {
+    font-family: Oswald-Regular;
+    color: aliceblue;
+    animation: blinkli3 2s ease infinite;
+}
+
+@keyframes blinkli3 {
+    0% {
+        text-shadow: 0px 0px aliceblue;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px aliceblue;
+    }
+}
+
+/* shastri */
+.fighter7row {
+    background-color: rgba(11, 11, 11, 1);
+}
+
+.fighter7col1 img {
+    border-radius: 10px;
+}
+
+.Shastri1 {
+    font-family: Poppins-BlackItalic;
+    color: #d64a16;
+    animation: blinkli 5s ease infinite;
+}
+
+@keyframes blinkli {
+    0% {
+        text-shadow: 0px 0px #d64a16;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px #d64a16;
+    }
+}
+
+.Shastri2 {
+    font-family: Poppins-BlackItalic;
+    color: #fff;
+    animation: blinkli1 4s ease infinite;
+}
+
+@keyframes blinkli1 {
+    0% {
+        text-shadow: 0px 0px #fff;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px #fff;
+    }
+}
+
+.Shastri3 {
+    font-family: Poppins-BlackItalic;
+    color: #0d8401;
+    animation: blinkli2 3s ease infinite;
+}
+
+@keyframes blinkli2 {
+    0% {
+        text-shadow: 0px 0px #0d8401;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px #0d8401;
+    }
+}
+
+.shastri-dateofbirth {
+    font-family: Oswald-Regular;
+    color: aliceblue;
+    animation: blinkli3 2s ease infinite;
+}
+
+@keyframes blinkli3 {
+    0% {
+        text-shadow: 0px 0px aliceblue;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px aliceblue;
+    }
+}
+/* independence */
+.independence {
+    background-color: rgba(11, 11, 11, 1);
+}
+
+.redfort h1 {
+    font-family: Oswald-Regular;
+    color: aliceblue;
+    display: inline;
+    border-radius: 5px;
+    animation: blinking 1s ease infinite;
+}
+
+@keyframes blinking {
+    0% {
+        text-shadow: 0px 0px aliceblue;
+    }
+
+    100% {
+        text-shadow: 0px 0px 100px aliceblue;
+    }
+}
+
+.independencerow {
+    position: relative;
+}
+
+.redfort {
+    position: absolute;
+    top: 25%;
+}
+
+/* footer */
+.footer {
+    background-color: rgba(11, 11, 11, 1);
+}
+
+.footer1,
+.footer2 {
+    font-family: Poppins-BlackItalic;
+    color: #d64a16;
+    animation: blinkli 5s ease infinite;
+}
+
+.footer3 {
+    font-family: Poppins-BlackItalic;
+    color: #fff;
+    animation: blinkli1 4s ease infinite;
+}
+
+.footer4 {
+    font-family: Poppins-BlackItalic;
+    color: #0d8401;
+    animation: blinkli2 3s ease infinite;
+}
+
+.footercol h3 {
+    font-family: Poppins-Black;
+    color: aliceblue;
+    animation: blinklings 2s ease infinite;
+}
+
+@keyframes blinklings {
+    0% {
+        text-shadow: 0px 0px #06038D;
+    }
+
+    100% {
+        text-shadow: -5px 5px 20px #06038D;
+    }
+}
+
+
+
+
+
+/* independence day */
+.freedom-fighters {
+    background-color: rgba(11, 11, 11, 1);
+}
+
+.details1 {
+    font-family: Oswald-Regular;
+    color: #d64a16;
+    animation: blinkli 2s ease infinite;
+}
+
+.details2 {
+    font-family: Oswald-Regular;
+    color: #fff;
+    animation: blinkli1 4s ease infinite;
+}
+
+.details3 {
+    font-family: Oswald-Regular;
+    color: #0d8401;
+    animation: blinkli2 3s ease infinite;
+}
+.tooltip{
+    --bs-tooltip-bg: #06038D!important;
+}

@@ -1,0 +1,175 @@
+@media screen and (max-width:576px) {
+    header ul {
+        gap: 10px !important;
+        flex-direction: row !important;
+        justify-content: center;
+    }
+
+    .header {
+        border-radius: 0px;
+    }
+
+    header ul li a {
+        font-size: 10px !important;
+    }
+
+    .green {
+        padding: 0px 15px;
+    }
+
+    .Gandhi1,
+    .Gandhi2,
+    .Gandhi3,
+    .Bose1,
+    .Bose2,
+    .Bose3,
+    .Rani1,
+    .Rani2,
+    .Rani3,
+    .Singh1,
+    .Singh2,
+    .Singh3,
+    .Chatterjee1,
+    .Chatterjee2,
+    .Chatterjee3,
+    .Azad1,
+    .Azad2,
+    .Azad3,
+    .Shastri1,
+    .Shastri2,
+    .Shastri3 {
+        display: block;
+    }
+
+    .gandhi-dateofbirth,
+    .bose-dateofbirth,
+    .rani-dateofbirth,
+    .singh-dateofbirth,
+    .chatterjee-dateofbirth,
+    .azad-dateofbirth,
+    .shastri-dateofbirth {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .fighter1row,
+    .fighter3row,
+    .fighter5row,
+    .fighter7row {
+        flex-direction: column;
+    }
+
+    .fighter2row,
+    .fighter4row,
+    .fighter6row {
+        flex-direction: column-reverse;
+    }
+
+    .fighter1col1,
+    .fighter2col2,
+    .fighter3col1,
+    .fighter4col2,
+    .fighter5col1,
+    .fighter6col2,
+    .fighter7col1 {
+        margin: auto;
+    }
+
+    .fighter1col1 img,
+    .fighter2col2 img,
+    .fighter3col1 img,
+    .fighter4col2 img,
+    .fighter5col1 img,
+    .fighter6col2 img,
+    .fighter7col1 img {
+        width: 100%;
+    }
+
+    .Gandhi1,
+    .Gandhi2,
+    .Gandhi3,
+    .Bose1,
+    .Bose2,
+    .Bose3,
+    .Rani1,
+    .Rani2,
+    .Rani3,
+    .Singh1,
+    .Singh2,
+    .Singh3,
+    .Chatterjee1,
+    .Chatterjee2,
+    .Chatterjee3,
+    .Azad1,
+    .Azad2,
+    .Azad3,
+    .Shastri1,
+    .Shastri2,
+    .Shastri3 {
+        display: block;
+    }
+
+    .footer3,
+    .footer4 {
+        display: block;
+    }
+
+    .flag-logo {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .navbar-toggler {
+        background: linear-gradient(360deg, #0d8401, #fff, #d64a16);
+        border: none;
+    }
+    .flag-logo{
+        display: none;
+    }
+   .headercol {
+        text-align: end;
+    }
+}
+
+@media screen and (min-width:576px) {
+    header ul {
+        gap: 5px !important;
+        flex-direction: row !important;
+        justify-content: center;
+    }
+
+    .header {
+        border-radius: 0px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    header ul {
+        gap: 50px !important;
+        flex-direction: row !important;
+        justify-content: center;
+    }
+
+    .header {
+        border-radius: 0px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    header ul {
+        gap: 50px !important;
+        flex-direction: row !important;
+        justify-content: center;
+    }
+
+    .header {
+        border-radius: 0px 0px 200px 200px;
+    }
+    
+    .headercol {
+        display: none;
+    }
+}
