@@ -6,89 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flag</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        section {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            background-color: #000;
-            transform-style: preserve-3d;
-            perspective: 1000px;
-            overflow: hidden;
-        }
-
-        .container {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            display: flex;
-        }
-
-        .container span {
-            width: 0.5vw;
-            height: 100%;
-            background-color: #fff;
-            border-top: 33.333vh solid #d64a16;
-            border-bottom: 33.333vh solid #0d8401;
-            /* border-top: 33.333vh solid #ff9933;
-            border-bottom: 33.333vh solid #138808; */
-        }
-
-        .ashoka {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            z-index: 1000;
-            max-height: 34vh;
-            animation: animate 24s linear infinite;
-        }
-
-        @keyframes animate {
-            0% {
-                transform: translate(-50%, -50%) rotate(0deg);
-            }
-
-            100% {
-                transform: translate(-50%, -50%) rotate(360deg);
-            }
-        }
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.flag{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    animation: flagzoom 0.5s linear forwards;
+    animation-delay: 2s;
+}
+@keyframes flagzoom {
+    0%{
+      transform: rotate(0deg) scale(1);  
+    }
+    100%{
+      transform: rotate(-15deg) scale(1.5);  
+    }
+}
+.flag .color1{
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 33vh;
+    background-color: #ff9933;
+    transform: scaleX(0);
+    animation: color1 1s linear forwards;
+    transform-origin: left;
+}
+@keyframes color1{
+    0%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+.flag .color2{
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 33vh;
+    background-color: #138808;
+    transform: scaleX(0);
+    animation: color1 1s linear forwards;
+    transform-origin: right;
+    animation-delay: 1s;
+}
+.chakra{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    z-index: 1;
+    animation: fadeIn 0.5s linear forwards; 
+    animation-delay: 3s;  
+}
+@keyframes fadeIn {
+    0%{
+       transform: translate(-50%,-50%) scale(5);
+       opacity: 0; 
+    }
+    100%{
+       transform: translate(-50%,-50%) scale(1);
+       opacity: 1; 
+    }
+}
+.chakra img{
+    margin-top: 0.5vh;
+    height: 34vh;
+    animation: rotate 20s linear infinite;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
     </style>
 </head>
 
 <body>
-    <section>
-        <div class="container">
-            <a href='./indexe.html'><img src="ashokachakra.png" class="ashoka" alt="ashoka chakra"/></a>
+    <div class="flag">
+        <div class="color1"></div>
+        <div class="chakra">
+            <a href='./indexe.html'><img src="ashokachakra.png" alt="ashoka chakra" /></a>
         </div>
-    </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-    <script>
-        for (let i = 1; i <= 200; i++) {
-            let bars = document.createElement('span');
-            document.querySelector('.container').appendChild(bars);
-        }
-
-
-        TweenMax.from('.container span', {
-            transform: "translateY(1000px)",
-            zIndex: 100,
-            delay: 1,
-            stagger: {
-                from: "random",
-                amount: 10
-            }
-        })
-
-        TweenMax.from('.ashoka', 0.5, {//0.5 is animation duration
-            opacity: 0,
-            delay:11.5
-        })
-    </script>
+        <div class="color2"></div>
+    </div>
 </body>
 
 </html>
