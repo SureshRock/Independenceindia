@@ -4,124 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flag</title>
+    <title>Happy Independence Day</title>
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
+        }
+
+        body,
+        html {
+            width: 100%;
+            height: 100%;
             overflow: hidden;
         }
 
-        .flag {
-            position: absolute;
-            top: 0;
-            left: 0;
+        section {
             width: 100%;
             height: 100vh;
-            animation: flagzoom 0.5s linear forwards;
-            animation-delay: 2s;
         }
 
-        @keyframes flagzoom {
-            0% {
-                transform: rotate(0deg) scale(1);
-            }
-
-            100% {
-                transform: rotate(-15deg) scale(1.5);
-            }
-        }
-
-        .flag .color1 {
+        section video {
+            object-fit: cover;
             position: absolute;
-            top: -5px;
-            left: 0;
+            transform: rotate(210deg);
+        }
+
+        section h3 {
+            position: absolute;
             width: 100%;
-            height: 33vh;
-            background-color: #ff9933;
-            transform: scaleX(0);
-            animation: color1 1s linear forwards;
-            transform-origin: left;
+            height: 100%;
+            background: #fff;
+            text-align: center;
+            line-height: 100vh;
+            font-size: 8vw;
+            mix-blend-mode: screen;
+            font-family: none;
         }
 
-        @keyframes color1 {
-            0% {
-                transform: scaleX(0);
-            }
-
-            100% {
-                transform: scaleX(1);
+        @media screen and (max-width:768px) {
+            section video {
+                transform: rotate(270deg);
             }
         }
 
-        .flag .color2 {
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 100%;
-            height: 33vh;
-            background-color: #138808;
-            transform: scaleX(0);
-            animation: color1 1s linear forwards;
-            transform-origin: right;
-            animation-delay: 1s;
-        }
-
-        .chakra {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            opacity: 0;
-            z-index: 1;
-            animation: fadeIn 0.5s linear forwards;
-            animation-delay: 3s;
-        }
-
-        @keyframes fadeIn {
-            0% {
-                transform: translate(-50%, -50%) scale(5);
-                opacity: 0;
-            }
-
-            100% {
-                transform: translate(-50%, -50%) scale(1);
-                opacity: 1;
-            }
-        }
-
-        .chakra img {
-            margin-top: 0.5vh;
-            height: 34vh;
-            animation: rotate 20s linear infinite;
-        }
-
-        @keyframes rotate {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        @media screen and (max-width:576px) {
-            .chakra img {
-                height: 25vh;
-            }
+        a {
+            text-decoration: none;
+            color: currentColor;
         }
     </style>
 </head>
 
 <body>
-    <div class="flag">
-        <div class="color1"></div>
-        <div class="chakra">
-            <a href='./indexe.html'><img src="ashokachakra.png" alt="ashoka chakra" /></a>
-        </div>
-        <div class="color2"></div>
-    </div>
+    <section>
+        <video controls autoplay loop muted src="flag.mp4" type="video/mp4" width="100%" height="100%"></video>
+        <a href='./indexe.html'>
+            <h3>Happy Independence Day</h3>
+        </a>
+    </section>
 </body>
 
 </html>
