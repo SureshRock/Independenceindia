@@ -4,104 +4,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Independence Day</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./media.css" />
+    <title>Independence</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #000;
+        }
+
+        .flag {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            -webkit-box-reflect: below 15px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+            bottom: 50px;
+        }
+
+        .flag::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            border-top: 100px solid #ff9933;
+            border-bottom: 100px solid #138808;
+            box-sizing: border-box;
+            filter: url(#wavy);
+        }
+
+        .flag::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            filter: url(#wavy);
+        }
+
+        .flag img {
+            max-width: 100px;
+            z-index: 100;
+            position: relative;
+            animation: rotate 20s linear infinite;
+            top: 8px;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        svg {
+            width: 0;
+            height: 0;
+        }
+
+        @media screen and (max-width:576px) {
+            .flag {
+                width: 80%;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: currentColor;
+        }
+    </style>
 </head>
 
 <body>
-    <main>
-        <!-- header starts -->
-        <header class="container-fluid">
-            <div class="container header">
-                <div class="row">
-                        <div class="col-12">
-                            <nav class="navbar navbar-expand-lg">
-                                <button class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                    <a href='#'><img src="./circleflag.png" width="100px" class="headercol" alt="Flag Image"/></a>
-                                <div class="collapse navbar-collapse navigation-div" id="navbar">
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item saffron"><a href="#" class="nav-link">home</a></li>
-                                        <li class="nav-item"><a href="#" class="nav-link"><img src="./circleflag.png"
-                                                    width="150px" class="flag-logo" /></a></li>
-                                        <li class="nav-item green"><a href="./indexe.html" class="nav-link">freedom
-                                                fighters</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-        </header>
-        <!-- header ends -->
-        <!-- banner starts-->
-        <section class="container-fluid banner">
-            <div class="row">
-                <div class="col-12 p-0">
-                    <img src="./independence.jpg" width="100%" alt="Indepence Image"/>
-                </div>
-            </div>
-        </section>
-        <!-- banner ends -->
-        <!-- independence day starts -->
-        <section class="container-fluid freedom-fighters">
-            <div class="container">
-                <div class="row pb-5">
-                    <div class="col-12 pb-5">
-                        <img src="./freedomfighters.png" width="100%" alt="Freedom Fighters Image"/>
-                        <a href="https://en.wikipedia.org/wiki/Independence_Day_(India)" data-bs-toggle="tooltip"
-                            title="Click here for more details about Independence Day" data-bs-placement="left">
-                            <h1 class="text-center"><span class="details1">India</span> <span
-                                    class="details2">Independence</span> <span class="details3">Day</span></h1>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- independence day ends -->
-        <!-- happy independence starts -->
-        <section class="container-fluid independence">
-            <div class="row pt-5 independencerow">
-                <div class="redfort text-center py-5">
-                    <a href='https://en.wikipedia.org/wiki/Red_Fort' data-bs-toggle="tooltip"
-                        title="Click here for more details about Red Fort" data-bs-placement="right">
-                        <h1 class="px-4 py-2">Red Fort</h1>
-                    </a>
-                </div>
-                <div class="col-12 p-0">
-                    <img src="./happy-independence.png" width="100%" alt="Indepence Image"/>
-                </div>
-            </div>
-        </section>
-        <!-- happy independence ends -->
-        <!-- footer starts -->
-        <footer class="container-fluid footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center footercol pb-5">
-                        <a href="https://en.wikipedia.org/wiki/Flag_of_India" data-bs-toggle="tooltip"
-                            title="Click here for more details about India Flag" data-bs-placement="right"><img
-                                src="./flag2.png" width="300px" alt="Flag Image"/></a>
-                        <h1><span class="footer1">Developed</span> <span class="footer2">By</span> <span
-                                class="footer3">Frontend</span> <span class="footer4">Developer</span></h1>
-                        <h3>Suresh</h3>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- footer ends -->
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-    <script src="./costumjs.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <div class="flag">
+        <a href='./indexe.html'><img src="ashokachakra.png" alt="ashoka chakra" /></a>
+    </div>
+    <svg>
+        <filter id="wavy">
+            <feTurbulence x="0" y="0" baseFrequency="0.01" numOctaves="5" seed="2">
+                <animate attributeName="baseFrequency" dur="60s" values="0.0.2;0.05;0.02" repeatCount="indefinite">
+                </animate>
+            </feTurbulence>
+            <feDisplacementMap in="SourceGraphic" scale="30"></feDisplacementMap>
+        </filter>
+    </svg>
 </body>
 
 </html>
