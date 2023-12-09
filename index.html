@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="flagicon.png">
     <title>Independence</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <style>
         * {
             margin: 0;
@@ -84,16 +86,22 @@
                 right: 8px;
             }
         }
-        a{
+
+        a {
             text-decoration: none;
             color: currentColor;
+        }
+
+        .tooltip {
+            --bs-tooltip-bg: #06038D !important;
         }
     </style>
 </head>
 
 <body>
     <div class="flag">
-        <a href='./indexe.html'><img src="ashokachakra.png" alt="ashoka chakra"/></a>
+        <a href='./indexe.html'><img src="ashokachakra.png" alt="ashoka chakra" data-bs-toggle="tooltip"
+                title="Click here for more details" data-bs-placement="bottom" /></a>
     </div>
     <svg>
         <filter id="wavy">
@@ -104,6 +112,11 @@
             <feDisplacementMap in="SourceGraphic" scale="30"></feDisplacementMap>
         </filter>
     </svg>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="costumjs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 </body>
 
 </html>
