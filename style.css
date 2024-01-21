@@ -724,3 +724,10 @@ header ul {
     filter: blur(20px); /* Initial blur amount */
   transition: filter 0.5s ease-out; /* Smooth transition for the blur effect */
 }
+
+#blurredImage2 {
+    margin: 0px 10px 0px 0px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
