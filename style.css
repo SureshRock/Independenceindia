@@ -722,5 +722,5 @@ header ul {
 
 #blurredImage1,#blurredImage2,#blurredImage3,#blurredImage4,#blurredImage5,#blurredImage6,#blurredImage7,#blurredImage8,#blurredImage9,#blurredImage10{
     filter: blur(20px); /* Initial blur amount */
-  transition: filter 7s ease-out; /* Smooth transition for the blur effect */
+  transition: filter 1s ease-out; /* Smooth transition for the blur effect */
 }
