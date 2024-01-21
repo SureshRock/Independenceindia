@@ -53,6 +53,17 @@
     .title{
         margin-bottom: 0px!important;
     }
+    .fighter1col2,
+    .fighter2col1,
+    .fighter3col2,
+    .fighter4col1,
+    .fighter5col2,
+    .fighter6col1{
+        margin-bottom: 50px!important;
+    }
+    .fighter7col2 {
+        margin-bottom: 10px!important;
+    }
 }
 
 @media screen and (max-width:768px) {
