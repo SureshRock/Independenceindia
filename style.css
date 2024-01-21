@@ -725,9 +725,14 @@ header ul {
   transition: filter 0.5s ease-out; /* Smooth transition for the blur effect */
 }
 
+.ashoka-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #blurredImage2 {
-    margin: 0px 10px 0px 0px;
-    background-color: #fff;
+    margin: 0px 10px;
     border-radius: 50px;
+    background-color: #fff;
 }
 

@@ -65,16 +65,6 @@
         margin-bottom: 10px!important;
     }
 }
-@media screen and (max-width:769px) {
-    .ashoka-head{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #blurredImage2 {
-        margin: 0px 10px;
-    }
-}
 @media screen and (max-width:768px) {
 
     .fighter1row,
