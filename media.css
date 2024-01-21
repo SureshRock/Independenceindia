@@ -50,6 +50,9 @@
     .shastri-dateofbirth {
         font-size: 14px;
     }
+    .title{
+        margin-bottom: 0px!important;
+    }
 }
 
 @media screen and (max-width:768px) {
